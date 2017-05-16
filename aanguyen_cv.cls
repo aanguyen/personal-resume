@@ -38,6 +38,7 @@
 \colorlet{titleText}{blackblue}
 \colorlet{subTitleText}{darkblue}
 \colorlet{accent}{medblue}
+\colorlet{autofilter}{white}
 
 \pagenumbering{gobble}
 
