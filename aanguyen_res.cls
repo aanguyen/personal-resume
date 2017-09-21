@@ -77,7 +77,7 @@
 	}
 	\normalsize
 	\fontfamily{phv}\selectfont
-	\begin{textblock}{5.8}(1.5, 4.33) %{width}(x, y)
+	\begin{textblock}{5.9}(14.7, 4.33) %{width}(x, y)
 	\begin{flushleft}
 	\obeycr
 	\vspace{-0.8cm} %header and sidebar
@@ -100,7 +100,7 @@
 		}
 		\vspace{-0.2cm}
 	}
-	\begin{textblock}{12}(8, 4.33)  %{width}(x, y)
+	\begin{textblock}{12}(1.5, 4.33)  %{width}(x, y)
 	\begin{flushleft}
 	\obeycr
 	\vspace{-0.8cm}
@@ -124,7 +124,7 @@
 	\parbox[t]{12cm} {
 		\fontfamily{phv}\selectfont
  		\textbf{\color{subTitleText}#1} \hfill \color{tagText}\textbf{#2}\\
-  		\color{accent}\emph{#3}\hfill \color{tagText}#4\\
+  		\color{accent}#3\hfill \color{tagText}#4\\
 		\color{bodyText}#5\\
  	}
 }
@@ -136,7 +136,8 @@
 		{
 			\fontsize{12pt}{18pt}\textbf{\color{subTitleText}#1}\\
 		}
-		\color{accent}\emph{#2}\\
+		\color{accent}#2\\
+		%\color{accent}\emph{#2}\\
 		\color{tagText}#3\\
 		\color{bodyText}#4
  	}
@@ -147,3 +148,4 @@
 	\fontfamily{phv}\selectfont
 	\hspace{-0.05cm}\raggedright\parbox[t]{1.0cm}{\emph{#1}} \parbox[t]{4.3cm}{#2}\\
 }
+
