@@ -124,8 +124,8 @@
 	\parbox[t]{12cm} {
 		\fontfamily{phv}\selectfont
  		\textbf{\color{subTitleText}#1} \hfill \color{tagText}\textbf{#2}\\
-  		\color{accent}#3\hfill \color{tagText}#4\\
-		\color{bodyText}#5\\
+  		\color{accent}#3\hfill \\
+		\color{bodyText}#4\\
  	}
 }
 %Edu entry
