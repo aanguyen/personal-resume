@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \LoadClass{article}
-\ProvidesClass{my_cv}[2017/02/09 My Resume]
+\ProvidesClass{aanguyen_res}[2017/02/09 My Resume]
 
 % Load packages
 \RequirePackage{titlesec}  
