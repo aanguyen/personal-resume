@@ -12,7 +12,7 @@
 \definecolor{lightblue}{HTML}{87CEFA}
 \definecolor{blue}{HTML}{0873B5}
 \definecolor{darkblue}{HTML}{043757}
-\definecolor{medblue}{HTML}{2c55a3}%1557c1
+\definecolor{medblue}{HTML}{2C55A3} %1557c1
 \definecolor{blackblue}{HTML}{00070C}
 \definecolor{pink}{HTML}{C26F67}
 \definecolor{lightred}{HTML}{A93226}
