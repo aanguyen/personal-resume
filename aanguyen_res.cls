@@ -48,6 +48,7 @@
 	\begin{tikzpicture}[remember picture, overlay]
 	\node [rectangle, fill=headerBackground, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north) {};
     \node [anchor=center] (name) at ([yshift=0.3cm]box) {
+    %\node [anchor=center] (name) at ([yshift=0cm]box) {
 		\fontsize{30pt}{45pt}\fontfamily{phv}\selectfont
       	{\color{headerText} #1}{\color{headerEmph} #2}
     };
