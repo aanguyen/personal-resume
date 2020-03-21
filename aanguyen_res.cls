@@ -130,7 +130,7 @@
  	}
 }
 %Edu entry
-\newcommand{\eduentry}[4] {
+\newcommand{\eduentry}[5] {
 	\fontfamily{phv}\selectfont
  	\hspace{-0.05cm}\parbox[t]{5.8cm} {
 		\fontfamily{phv}\selectfont
@@ -140,7 +140,8 @@
 		\color{accent}#2\\
 		%\color{accent}\emph{#2}\\
 		\color{tagText}#3\\
-		\color{bodyText}#4
+		\color{bodyText}#4\\
+		\color{bodyText}#5
  	}
 }
 %Award entry
