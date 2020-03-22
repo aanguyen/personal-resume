@@ -1,154 +1,167 @@
-\documentclass[]{aanguyen_res}
+%!TEX TS-program = xelatex
+\documentclass{aanguyen_res}
 
-\usepackage{fontawesome}
+\usepackage[letterpaper]{geometry}
+\usepackage{fontspec}
 \usepackage{xcolor}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
+
+\makeatletter
 
 \begin{document}
-	\header{ANDREW\space}{NGUYEN}{software developer}
-	\begin{sidebar}%
-		\vspace{35pt}% space between top and sidebar
-		%\section{Contact}
-			\iconentry{\faEnvelope}\href{mailto:andrew.nguyen@uwaterloo.ca}{andrew.nguyen@uwaterloo.ca}
-			\iconentry{\faPhone}{+852 9869-3059}
-			%\iconentry{\faPhone}{(647)-918-4240}
-			\iconentry{\faGithub}\href{http://github.com/aanguyen}{github.com/aanguyen}
-			\iconentry{\faLinkedin}\href{http://www.linkedin.com/in/aanguyen}{linkedin.com/in/aanguyen}
-			\vspace{0.75cm}%
-		\section{Skills}
-			\textbf{Languages: }Java, Python, C\#, C++, R, HTML5/CSS3, JavaScript, SQL, Visual Basic, VHDL
-			\vspace{0.15cm}%
-			\textbf{Technologies: }Android Studio, Git/Subversion, Firebase, Arduino, Visual Studio, Jira
-			\vspace{1cm}%
-		\section{Education}
-			\eduentry%
-				{University of Waterloo}%
-				{Computer Science}%
-				{2016 - 2021 (Expected)}%
-				{cGPA: 3.82/4.0 - Average: 88\%}% After Spring2019 - 101.2/106
-				{Dean's Honour List}
-			\vspace{0.65cm}%
-		\section{Awards}
-			\awardentry{2019}{President's International Experience Award}%
-			\awardentry{2017}{US Computing Olympiad Gold Division}%
-			\awardentry{2016}{Nortel Networks Undergraduate Scholarship}%
-			\awardentry{2016}{University of Waterloo\\President's Scholarship of Distinction}%
-			\awardentry{2016}{Top 5\% on AMC12}%
-			%\awardentry{2016}{2nd place nationally at ARML}%
-			\vspace{0.65cm}%
-		\section{Interests}
-		$\bullet$ Athletics - bouldering, ice hockey, volleyball
-		$\bullet$ Music - guitar, saxophone, piano
-		$\bullet$ Languages - French, Spanish, Vietnamese
-		$\bullet$ Cooking, baking\\(\iconentry{\faInstagram}{\href{https://www.instagram.com/munchmunchmkv/}{@munchmunchmkv}})
-	\end{sidebar}%
-	\begin{main}%
-		\vspace{35pt}%
-		\section{Experience}
-			\mainentry%
-				{Postmates}%
-				{Jan - Apr 2019}%
-				{Software Engineer Intern}%
-				{San Francisco, CA}%
-				{\faCaretRight Led development of translations pipeline in \textbf{Python} to automate string localization, saving copywriters 60 hours / year
-				  \faCaretRight Designed a robust framework to run tests on stage deploys, eliminating the need for manual testing of P0 / P1 scenarios
-				  \faCaretRight Built a native platform for Zendesk articles in \textbf{Python} allowing users to submit tickets with account and job info, reducing ticket handle time by 15\%}
-			\vspace{0.1cm}%
-			\mainentry%
-				{Wish}%
-				{May - Aug 2018}%
-				{Software Engineer Intern}%
-				{San Francisco, CA}%
-				{\faCaretRight Enhanced login flow on merchant dashboard in \textbf{Python}, increasing successful logins by \textbf{5\%} and successful password resets by \textbf{7\%}
-				\faCaretRight Revamped returns program UI in \textbf{Backbone.js}, increasing merchant enrollment by \textbf{14\%}
-				\faCaretRight Prevented bad actors from \textbf{\$3m} in malicious price increases every month}
-			\vspace{0.1cm}%
-			\mainentry%
-				{Shoplogix Inc.}%
-				{Sep - Dec 2017}%
-				{Sofware Engineer Intern}%
-				{Oakville, ON}%
-				%\faCaretRight Redesigned mobile application written in \textbf{React Native} to streamline authentication flow
-				{\faCaretRight Led development of a Chrome OS application with \textbf{JavaScript} and \textbf{jQuery}, downloaded over 100 times by clients on the Chrome Web Store
-				\faCaretRight Designed several new \textbf{C\#} API endpoints to serve requested data to web application
-				\faCaretRight Diagnosed multiple backend issues with \textbf{C\#} server socket, leading to a 30\% increase in successful client socket connections}
-			%\vspace{0.1cm}%
-			%\mainentry%
-				%{Government of Canada}%
-				%{Jan - Apr 2017}%
-				%{Junior Researcher}%
-				%{Ottawa, ON}%
-				%{\faCaretRight Developed data analysis utilities for Wi-Fi sniffers and visualized Wi-Fi signal strengths using \textbf{R}
-				  %\faCaretRight Optimized data processing software in \textbf{Visual Basic} which resulted in 15\% faster processing of sensor log files}
-			\vspace{0.30cm}%	
-		\section{Projects}
-			%\mainentry%
-			%	{\href{https://github.com/oryzajustin/PawPrint}{PawPrint {\faGithub}}}%
-			%	{October 2017}%
-			%	{Hack Harvard}%
-			%	{\faCaretRight Web service that scrapes public webcams and identifies non-leashed animals with the help of \textbf{openCV}
-			%	\faCaretRight Users who subscribe to this service and who may have lost a pet can receive text message alerts}%
-			\vspace{0.1cm}%
-			\mainentry%
-				{\href{https://github.com/kumailn/clipBuddy}{clipBuddy {\faGithub}}}%
-				{Sep 2017}%
-				{Hack the North}%
-				{}%
-				{\faCaretRight Winner of XE.com API prize by successfully implementing currency conversion capabilities
-				\faCaretRight Background phone application that allows users to access utilities from their clipboard, built in \textbf{Android Studio} using \textbf{Java}}
-			\vspace{0.1cm}%
-			\mainentry%
-				{\href{https://github.com/aanguyen/SignBuddy}{SignBuddy {\faGithub}}}%
-				{Mar 2017}%
-				{CUHacking I}%
-				{}%
-				{\faCaretRight Interactive sign language recognizer using a Leap Motion controller 
-				\faCaretRight Used \textbf{Python scikit-learn} library and hand-generated training data to classify signs, incorporated into a web video client}
-			%\vspace{0.1cm}%
-			%\mainentry%
-			%	{\href{https://github.com/aanguyen/collaboPiano}{CollaboPiano {\faGithub}}}%
-			%	{Feb 2017}%
-			%	{IEEE Hardware Hackathon}%
-			%	{}%
-			%	{\faCaretRight Two piano simulators with \textbf{Arduinos} that play identical sound on each speaker as an aggregate of both pianos using force sensors as keys
-			%	\faCaretRight Allows users to collaborate on music from afar using transceivers and the RadioHead library}
-			\vspace{0.1cm}%
-			\mainentry%
-				{\href{https://github.com/dtong1113/TherapyHelper}{Therapy Helper {\faGithub}}}%
-				{Jan 2017}%
-				{DeltaHacks III}%
-				{}%
-				{\faCaretRight Web application composed of a \textbf{MongoDB} and \textbf{Node.js} backbone with frontend done in \textbf{Vue.js}
-				\faCaretRight Lets therapists provide custom self-assessments to patients, and view all patient data in one place
-				\faCaretRight Allows patients to complete their homework more discreetly online}
-			%\vspace{0.1cm}%
-			%\mainentry%
-			%	{\href{http://github.com/Havkiin/RobotRock}{Web Robot {\faGithub}}}%
-			%	{January 2017}%
-			%	{ConU Hacks II}%
-			%	{\faCaretRight Intel Edison \textbf{Arduino} robot controlled through user input from a website
-			%	\faCaretRight Capture image/move commands communicated to robot by writing to a .txt file with \textbf{PHP}, then reading from the board}%
-			%\vspace{0.1cm}%
-			%\mainentry%
-			%	{\href{http://github.com/aanguyen/assembly-parser}{Basic Assembly Simulator {\faGithub}}}%
-			%	{November 2016}%
-			%	{Personal}%
-			%	{\faCaretRight A simple parser of RISC assembly instructions, built with \textbf{C++}
-			%	\faCaretRight Implemented a priority queue to push events based on the required completion time and pop from the beginning
-			%	\faCaretRight Locates and highlights where assembly syntax errors occur, if any exist}
-			%\mainentry%
-			%	{Computer Camp Counsellor}%
-			%	{May - Aug 2015}%
-			%	{City of Toronto}%
-			%	{\faAngleRight \space Taught campers aged 6-12 basic computer skills including Word, PowerPoint, Excel, and touch typing
-			%	 \faAngleRight \space Resolved conflicts between campers and kept order, both in the community centre and while on off-site field trips around Toronto}
-			%\mainentry%
-			%	{Assistant Math Teacher}%
-			%	{Sep 2013 - Jun 2015}%
-			%	{Spirit of Math Schools}%
-			%	{\faAngleRight \space Assisted teacher in explaining concepts to the class, as well as working with individual students to provide more focused help
-			%	 \faAngleRight \space Represented the organization professionally whilst dealing with parents.
-			%	 \faAngleRight \space Increased class average of timed math drills by 15\%}
-			\vspace{0.65cm}%
-	\end{main}%
+  \header%
+    {andrew}%
+    {nguyen}%
+    {\iterate{1.647.918.4240, \href{mailto:andrew.nguyen@uwaterloo.ca}{andrew.nguyen@uwaterloo.ca}}}%
+    {\iterate{%
+      %\iconentry{\FAS\symbol{"F015}}{\href{https://linktowebsite.com/}{linktowebsite.com}},%
+      \iconentry{\FAB\symbol{"F09B}}{\href{https://github.com/aanguyen/}{aanguyen}},%
+      \iconentry{\FAB\symbol{"F08C}}{\href{https://www.linkedin.com/in/aanguyen}{aanguyen}}%
+    }}%
+  \begin{sidebar}
+    \section{SKILLS}
+      \subheader{Languages}
+        \iterate{Java, Python, C++, R}
+        \iterate{HTML, CSS, JavaScript, SQL}
+        \iterate{Visual Basic, VDHL}
+      \subheader{Technologies}
+        \iterate{Android Studio, Git}
+        \iterate{Subversion, Firebase, Arduino}
+        \iterate{Visual Studio, Jira}
+    \section{AWARDS}
+      \begin{itemize}[leftmargin=0.45cm, topsep=0.0cm]%
+        \item[--] President's International Experience Award \separator\emph{2019}
+        \item[--] US Computing Olympiad Gold Division \separator\emph{2017}
+        \item[--] Nortel Networks Undergraduate Scholarship \separator\emph{2016}
+        \item[--] University of Waterloo President's Scholarship of Distinction \separator\emph{2016}
+        \item[--] Top 5\% on AMC12  \separator\emph{2016}
+      \end{itemize}%
+    \section{EDUCATION}
+      \subheader{University of Waterloo}
+      \color{tagText}Bachelor of Computer Science
+      \color{subTagText}2016 -- 2021 \separator\color{subTagText}Waterloo, Canada
+      \color{bodyText}%
+      \begin{itemize}[leftmargin=0.45cm, noitemsep, topsep=0.0cm]%
+        \item[--] 88\% Cumulative Average
+        \item[--] Dean's Honour List (4 Terms)
+      \end{itemize}%
+    \section{INTERESTS}
+      \begin{itemize}[leftmargin=0.45cm, noitemsep, topsep=0.0cm]%
+        \item[--] Athletics -- bouldering, ice hockey, volleyball
+        \item[--] Music -- guitar, saxophone, piano
+        \item[--] Languages -- French, Spanish, Vietnamese
+        \item[--] Cooking, baking \\ (\iconentry{\FAB\symbol{"F16D}}{\href{https://www.instagram.com/munchmunchmkv/}{munchmunchmkv}})
+      \end{itemize}%
+  \end{sidebar}
+  \begin{main}
+    \vspace{0.2cm}%
+    \section{EXPERIENCE}
+      \begin{entrylist}
+        \rightentry%
+          {Jan -- Apr 2019}%
+          {Postmates}%
+          {San Francisco, California}%
+          {Software Engineering Intern}%
+          {\createlist%
+            {%
+              Led development of translations pipeline in Python to automate string localization, %
+              saving copywriters 60 hours / year %
+            }%
+            {%
+              Designed a robust framework to run tests on stage deploys, eliminating the need for %
+              manual testing of P0 / P1 scenarios %
+            }%
+            {%
+              Built a native platform for Zendesk articles in Python allowing users to submit tickets %
+              with account and job info, reducing ticket handle time by 15\% %
+            }%
+          }
+        \rightentry%
+          {May -- Aug 2018}%
+          {Wish}%
+          {San Francisco, California}%
+          {Software Engineering Intern}%
+          {\createlist%
+            {%
+              Enhanced login flow on merchand dashboard in Python, increasing successful logins %
+              by 5\% and successful password resets by 7\% %
+            }%
+            {%
+              Revamped returns program UI in Backbone.js, increasing merchant enrollment %
+              by 14\% %
+            }%
+            {%
+              Prevented bad actors from \$3m in malicious price increases every month %
+            }%
+          }
+        \rightentry%
+          {Sep -- Dec 2017}%
+          {Shoplogix Inc}%
+          {Oakville, Ontario}%
+          {Software Engineering Intern}%
+          {\createlist%
+            {%
+              Led development of a Chrome OS application with Javascript and jQuery, downloaded %
+              over 100 times by clients on the Chrome Web Store %
+            }%
+            {%
+              Designed several new C\# API endpoints to serve requested data to web application %
+            }%
+            {%
+              Diagnosed multiple backend issues with C\# server socket, leading to a 30\% increase %
+              in successful client socket connections %
+            }%
+          }
+      \end{entrylist}
+    \section{PROJECTS}
+      \begin{entrylist}
+        \rightentry%
+          {Android Studio}%
+          {\href{https://github.com/kumailn/clipBuddy}{\iconentry{\FAB\symbol{"F09B}}{clipBuddy}}}%
+          {Sep 2017}%
+          {Hack the North}%
+          {\createlist%
+            {%
+              Winner of XE.com API prize by successfully implementing currency conversion %
+              capabilities %
+            }%
+            {%
+               Background phone application that allows users to access utilities from their clipboard, %
+               built in Android Studio using Java%
+            }%
+          }
+        \rightentry%
+          {Python, Scikit-learn}%
+          {\href{https://github.com/aanguyen/SignBuddy}{\iconentry{\FAB\symbol{"F09B}}{signBuddy}}}%
+          {Mar 2017}%
+          {CUHacking}%
+          {\createlist%
+            {%
+              Interactive sign language recognizer using a Leap Motion controller %
+            }%
+            {%
+              Used Python scikit-learn library and hand-generated training data to classify signs, %
+              incorporated into a web video client %
+            }%
+          }
+        \rightentry%
+          {MongoDB, Node, Vue}%
+          {\href{https://github.com/dtong1113/TherapyHelper}{\iconentry{\FAB\symbol{"F09B}}{Therapy Helper}}}%
+          {Jan 2017}%
+          {DeltaHacks}%
+          {\createlist%
+            {%
+              Web application composed of a MongoDB and Node.js backbone with frontend done in %
+              Vue.js %
+            }%
+            {%
+              Lets therapists provide custom self-assessments to patients, and view all patient data in %
+              one place %
+            }%
+            {%
+              Allows patients to complete their homework more discreetly online %
+            }%
+          }
+      \end{entrylist}
+  \end{main}
 \end{document}
